@@ -1,0 +1,87 @@
+@keyframes moveToTop {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem; 
+    transition: all .2s;
+    position: relative;
+    text-align: center;
+    
+}
+
+.btn-white {
+    background-color: transparent;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+.btn:active {
+    transform: translate(-0.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    border-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: transparent;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveToTop .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+.btn-div{
+    height: 200px;
+    width: 150px;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to right bottom
+        ,rgba(126,213,11,0.8)
+        ,rgba(40,180,131,0.8))
+        ,url("https://previews.123rf.com/images/peshkov/peshkov1803/peshkov180300197/97708820-creative-circuit-ai-lamp-background-technology-and-artificial-intelligence-concept-3d-rendering.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+   
+}

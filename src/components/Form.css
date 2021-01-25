@@ -1,0 +1,49 @@
+
+
+.form{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+    background-color: lightblue;
+    box-shadow: -1px 2px 15px 5px rgba(46,74,117,1);
+}
+
+.react-datepicker-ignore-onclickoutside{
+    background: lightblue;
+    border: none;
+    outline: none;
+    border-bottom : '1px solid black';
+}
+
+
+.btn-submit{
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header {
+    height: 100%;
+    background-image: linear-gradient(
+        to right bottom
+        ,rgba(126,213,11,0.8)
+        ,rgba(40,180,131,0.8))
+        ,url("https://previews.123rf.com/images/peshkov/peshkov1803/peshkov180300197/97708820-creative-circuit-ai-lamp-background-technology-and-artificial-intelligence-concept-3d-rendering.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+   
+}
+
+
